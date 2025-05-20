@@ -1,0 +1,98 @@
+//Mixins
+@mixin no-border-and-background{
+    border: none;
+    background: none;
+}
+@mixin box-config{
+    padding: 2% 1% 2% 1%;
+    border: 3px solid aliceblue;
+    border-radius: 20px;
+}
+@mixin mobile-box{
+    height: 25vh;
+    padding: 2% 1% 2% 1%;
+}
+//Styles
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+#main{
+
+    #title{
+        @media only screen and (max-width: 767px) {
+            margin-top: 5%;
+        }
+        text-align: center;
+        font-weight: bold;
+        margin-top: 3%;
+    }
+
+    #break-session-div{
+        margin-top: 5%
+    }
+
+    #break-section{
+        @media only screen and (max-width: 767px) {
+            @include mobile-box();
+            margin-top: 5%;
+            height: fit-content;
+        }
+        @include box-config();
+        text-align: center;
+        font-size: xx-large;
+        
+        #break-decrement{
+            @include no-border-and-background();
+        }
+
+        #break-increment{
+            @include no-border-and-background();
+        }
+    }
+
+    #session-section{
+        @media only screen and (max-width: 767px) {
+            @include mobile-box();
+            margin-top: 2%;
+            height: fit-content;
+        }
+        @include box-config();
+        text-align: center;
+        font-size: xx-large;
+
+        #session-decrement{
+            @include no-border-and-background();
+        }
+
+        #session-increment{
+            @include no-border-and-background();
+        }
+    }
+
+    #timer-section{
+        @media only screen and (max-width: 767px) {
+            @include mobile-box();
+            margin-top: 2%;
+        }
+        @include box-config();
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 10%;
+
+        #start_stop{
+            @include no-border-and-background();
+            transform: rotate(180deg);
+            margin-right: 20%; 
+        }
+
+        #reset{
+            @include no-border-and-background();
+            
+        }
+    }
+}
+
+.active{
+    color: black;
+}

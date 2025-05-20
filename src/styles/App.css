@@ -1,0 +1,95 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+
+#main #title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3%;
+}
+@media only screen and (max-width: 767px) {
+  #main #title {
+    margin-top: 5%;
+  }
+}
+#main #break-session-div {
+  margin-top: 5%;
+}
+#main #break-section {
+  padding: 2% 1% 2% 1%;
+  border: 3px solid aliceblue;
+  border-radius: 20px;
+  text-align: center;
+  font-size: xx-large;
+}
+@media only screen and (max-width: 767px) {
+  #main #break-section {
+    height: 25vh;
+    padding: 2% 1% 2% 1%;
+    margin-top: 5%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+#main #break-section #break-decrement {
+  border: none;
+  background: none;
+}
+#main #break-section #break-increment {
+  border: none;
+  background: none;
+}
+#main #session-section {
+  padding: 2% 1% 2% 1%;
+  border: 3px solid aliceblue;
+  border-radius: 20px;
+  text-align: center;
+  font-size: xx-large;
+}
+@media only screen and (max-width: 767px) {
+  #main #session-section {
+    height: 25vh;
+    padding: 2% 1% 2% 1%;
+    margin-top: 2%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+#main #session-section #session-decrement {
+  border: none;
+  background: none;
+}
+#main #session-section #session-increment {
+  border: none;
+  background: none;
+}
+#main #timer-section {
+  padding: 2% 1% 2% 1%;
+  border: 3px solid aliceblue;
+  border-radius: 20px;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 767px) {
+  #main #timer-section {
+    height: 25vh;
+    padding: 2% 1% 2% 1%;
+    margin-top: 2%;
+  }
+}
+#main #timer-section #start_stop {
+  border: none;
+  background: none;
+  transform: rotate(180deg);
+  margin-right: 20%;
+}
+#main #timer-section #reset {
+  border: none;
+  background: none;
+}
+
+.active {
+  color: black;
+}/*# sourceMappingURL=App.css.map */
